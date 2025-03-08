@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Video Player */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: 450px;
+    overflow: hidden;
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Buttons */
+.controls, .theme-switch {
+    margin-top: 10px;
+}
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.match-btn {
+    background-color: #28a745;
+    color: white;
+}
+.match-btn:hover {
+    background-color: #218838;
+}
+.dark-mode-btn {
+    background-color: #333;
+    color: white;
+}
+.dark-mode-btn:hover {
+    background-color: #555;
+}
+.like-btn {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+}
+.like-btn.liked {
+    background-color: #d63031;
+}
+
+/* Advanced Ads Section */
+.ad-container {
+    text-align: center;
+    margin-top: 30px;
+}
+.ad-banner {
+    margin: 10px auto;
+    width: 728px;
+    height: 90px;
+}
+.ad-sidebar {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    width: 160px;
+    height: 600px;
+}
+.ad-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.close-popup {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 6px;
+}
+
+/* Sticky Floating Ad */
+.sticky-ad {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.close-ad {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 6px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .video-container {
+        height: 350px;
+    }
+    .ad-banner, .ad-sidebar {
+        display: none;
+    }
+    .sticky-ad {
+        width: 100%;
+        max-width: 320px;
+        height: 100px;
+        bottom: 5px;
+        right: 5px;
+    }
+}
