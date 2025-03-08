@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Live Match Streaming | Mobile & Desktop</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS File -->
+</head>
+<body>
+
+    <h2>Live Match Streaming</h2>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-switch">
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <!-- Live Video Stream -->
+    <div class="video-container">
+        <iframe id="liveStream" src="https://amartechbd.xyz/toffeebd/?play=match-1" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <!-- Match Selection & Like Button -->
+    <div class="controls">
+        <button class="match-btn" onclick="changeMatch(1)">English</button>
+        <button class="match-btn" onclick="changeMatch(2)">বাংলা ভয়েজ✅</button>
+        
+        <button class="like-btn" id="likeBtn" onclick="toggleLike()">❤️ Like (<span id="likeCount">0</span>)</button>
+    </div>
+
+    <!-- Advanced Ads Section -->
+    <div class="ad-container">
+        <h3>Sponsored Ads</h3>
+        <iframe class="ad-banner" id="bannerAd" src="https://www.effectiveratecpm.com/z0hair4i?key=52993e542fe1abed7e17dca47793a91b" scrolling="no" frameborder="0"></iframe>
+        <iframe class="ad-sidebar" id="sidebarAd" src="https://www.exampleads.com/ad160x600" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+    <!-- Pop-up Ad -->
+    <div class="ad-popup" id="popupAd">
+        <button class="close-popup" onclick="closePopup()">X</button>
+        <iframe src="https://www.effectiveratecpm.com/d2189jj6zk?key=55584f37c9ff8d0961281715905fe7fa" width="300" height="250" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+    <!-- Sticky Ad -->
+    <div class="sticky-ad" id="stickyAd">
+        <button class="close-ad" onclick="closeAd()">X</button>
+        <iframe src="https://www.effectiveratecpm.com/d2189jj6zk?key=55584f37c9ff8d0961281715905fe7fa" width="300" height="250" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking JavaScript File -->
+
+</body>
+</html>
